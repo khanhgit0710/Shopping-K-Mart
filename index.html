@@ -1,151 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang mua sắm K-Market</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/index.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang mua sắm K-Market</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-  <body>
-    <div class="web">
-      <div class="header">
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/index.css" />
+</head>
+
+<body>
+  <div class="web">
+    <div class="header">
+      <div class="grid">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-list--separate">
+              Mời vào ứng dụng K-Market
+            </li>
+            <li class="header__nav-item">
+              <span class="header__nav-item--no-pointer"> Kết nối </span>
+              <a class="header__nav-icon--link" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a class="header__nav-icon--link" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+          </ul>
+
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-item--link" href="">
+                <i class="fa-solid fa-bell"></i> Thông báo</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-item--link" href="">
+                <i class="fa-regular fa-circle-question"></i> Trợ giúp</a>
+            </li>
+            <li class="header__nav-item header__nav-list--separate">
+              <a class="header__nav-item header__nav-item--strong" href="/sign_up.html">Đăng ký</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-item header__nav-item--strong" href="/sign_in.html">Đăng nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-search-cart">
+        <div class="header__logo">
+          <div class="header__logo-link">
+            <a class="header__logo-link--item" href="/index.html">
+              <span>
+                <i class="fa-solid fa-bag-shopping"></i>
+                K - Market
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__search">
+          <div class="header__search--input">
+            <input type="text" class="header__search-item--input" placeholder="Mời bạn tìm sản phẩm!" />
+          </div>
+          <button class="header__search-btn">
+            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="header__cart">
+          <div class="header__cart-btn">
+            <i class="header__cart-btn-icon fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content">
         <div class="grid">
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item header__nav-list--separate">
-                Mời vào ứng dụng K-Market
-              </li>
-              <li class="header__nav-item">
-                <span class="header__nav-item--no-pointer"> Kết nối </span>
-                <a class="header__nav-icon--link" href="#"
-                  ><i class="fa-brands fa-square-facebook"></i
-                ></a>
-                <a class="header__nav-icon--link" href="#"
-                  ><i class="fa-brands fa-square-instagram"></i
-                ></a>
-              </li>
-            </ul>
+          <div class="grid__row app__content">
+            <!-- CỘT TRÁI 2 COL DANH MỤC SẢN PHẨM -->
 
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a class="header__nav-item--link" href="">
-                  <i class="fa-solid fa-bell"></i> Thông báo</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-item--link" href="">
-                  <i class="fa-regular fa-circle-question"></i> Trợ giúp</a
-                >
-              </li>
-              <li class="header__nav-item header__nav-list--separate">
-                <a class="header__nav-item header__nav-item--strong" href="/sign_up.html"
-                  >Đăng ký</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-item header__nav-item--strong" href="/sign_in.html"
-                  >Đăng nhập</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header-search-cart">
-          <div class="header__logo">
-            <div class="header__logo-link">
-              <a
-                class="header__logo-link--item"
-                href="/index.html"
-              >
-                <span>
-                  <i class="fa-solid fa-bag-shopping"></i>
-                  K - Market
-                </span>
-              </a>
+            <div class="grid__column-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  <i class="category__heading-icon fa-solid fa-list"></i>
+                  DANH MỤC
+                </h3>
+
+                <ul class="category__list">
+                  <!-- <li class="category__list-item">
+                    <a href="" class="category__list-item--link" onclick="filterbyCategory">Thời trang</a>
+                  </li> -->
+
+                  <!-- <li class="category__list-item">
+                    <a href="" class="category__list-item--link">Gia dụng</a>
+                  </li>
+
+                  <li class="category__list-item">
+                    <a href="" class="category__list-item--link">Mỹ phẩm</a>
+                  </li>
+
+                  <li class="category__list-item">
+                    <a href="" class="category__list-item--link">Đồ chơi</a>
+                  </li>
+
+                  <li class="category__list-item">
+                    <a href="" class="category__list-item--link">Trang trí</a>
+                  </li> -->
+                </ul>
+              </nav>
             </div>
-          </div>
 
-          <div class="header__search">
-            <div class="header__search--input">
-              <input
-                type="text"
-                class="header__search-item--input"
-                placeholder="Mời bạn tìm sản phẩm!"
-              />
-            </div>
-            <button class="header__search-btn">
-              <i
-                class="header__search-btn-icon fa-solid fa-magnifying-glass"
-              ></i>
-            </button>
-          </div>
-
-          <div class="header__cart">
-            <div class="header__cart-btn">
-              <i class="header__cart-btn-icon fa-solid fa-cart-plus"></i>
-            </div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="grid">
-            <div class="grid__row app__content">
-              <!-- CỘT TRÁI 2 COL DANH MỤC SẢN PHẨM -->
-
-              <div class="grid__column-2">
-                <nav class="category">
-                  <h3 class="category__heading">
-                    <i class="category__heading-icon fa-solid fa-list"></i>
-                    DANH MỤC
-                  </h3>
-
-                  <ul class="category__list">
-                    <li class="category__list-item">
-                      <a href="" class="category__list-item--link"
-                        >Thời trang</a
-                      >
-                    </li>
-
-                    <li class="category__list-item">
-                      <a href="" class="category__list-item--link">Gia dụng</a>
-                    </li>
-
-                    <li class="category__list-item">
-                      <a href="" class="category__list-item--link">Mỹ phẩm</a>
-                    </li>
-
-                    <li class="category__list-item">
-                      <a href="" class="category__list-item--link">Đồ chơi</a>
-                    </li>
-
-                    <li class="category__list-item">
-                      <a href="" class="category__list-item--link">Trang trí</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-
-              <!-- DANH SÁCH SẢN PHẨM CỘT PHẢI-->
-              <div class="grid__column-10">
-                <div class="home-product-list">
-                  <div class="grid__row">
-                    <!-- SẢN PHẨM 1 -->
-                    <div class="grid__column-2-4">
+            <!-- DANH SÁCH SẢN PHẨM CỘT PHẢI-->
+            <div class="grid__column-10">
+              <div class="home-product-list">
+                <div class="grid__row">
+                  <!-- SẢN PHẨM 1 -->
+                  <!-- <div class="grid__column-2-4">
                       <a href="" class="home-product__item">
                         <div class="home-product__item--img" style="
                             background-image: url(https://image.cocoonvietnam.com/uploads/z4064745554320_948e1adc6b3d34513f0e362e5de1d696_0626ba1caf.jpg);
@@ -183,10 +154,10 @@
                           </h4>
                         </div>
                       </a>
-                    </div>
+                    </div> -->
 
-                    <!-- SẢN PHẨM 2 -->
-                    <div class="grid__column-2-4">
+                  <!-- SẢN PHẨM 2 -->
+                  <!-- <div class="grid__column-2-4">
                       <a href="" class="home-product__item">
                         <div class="home-product__item--img" style="background-image: url(//image.cocoonvietnam.com/uploads/z4121418281884_8317874b9540c0f394d4450ee941e18c_1ecd94cf9e.jpg)"></div>
                         <h4 class="home-product__item--name">
@@ -221,10 +192,10 @@
                           </h4>
                         </div>
                       </a>
-                    </div>
+                    </div> -->
 
-                    <!-- SẢN PHẨM 3 -->
-                    <div class="grid__column-2-4">
+                  <!-- SẢN PHẨM 3 -->
+                  <!-- <div class="grid__column-2-4">
                       <a href="" class="home-product__item">
                         <div
                           class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/Artboard_15_a3a07f5eb5.jpg)"></div>
@@ -260,10 +231,10 @@
                           </h4>
                         </div>
                       </a>
-                    </div>
+                    </div> -->
 
-                    <!-- SẢN PHẨM 4 -->
-                    <div class="grid__column-2-4">
+                  <!-- SẢN PHẨM 4 -->
+                  <!-- <div class="grid__column-2-4">
                       <a href="" class="home-product__item">
                         <div class="home-product__item--img" style="background-image: url(//image.cocoonvietnam.com/uploads/Artboard_41_d59cbd8b7e.jpg)"></div>
                         <h4 class="home-product__item--name">
@@ -298,11 +269,11 @@
                           </h4>
                         </div>
                       </a>
-                    </div>
+                    </div> -->
 
-                    <!-- SẢN PHẨM 5 -->
+                  <!-- SẢN PHẨM 5 -->
 
-                    <div class="grid__column-2-4">
+                  <!-- <div class="grid__column-2-4">
                       <a href="" class="home-product__item">
                         <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
                         <h4 class="home-product__item--name">
@@ -337,390 +308,7 @@
                           </h4>
                         </div>
                       </a>
-                    </div>
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                                        <div class="grid__column-2-4">
-                      <a href="" class="home-product__item">
-                        <div class="home-product__item--img" style="background-image:url(//image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_140ml_Artboard_1_20cd33f087.png)"></div>
-                        <h4 class="home-product__item--name">
-                          Nước tẩy trang bí đao 140ml
-                        </h4>
-                        <div class="home-product__item-price">
-                          <span class="home-product__item--price-old">
-                            170.000đ
-                          </span>
-                          <span class="home-product__item--price-new">
-                            145.000đ
-                          </span>
-                        </div>
-                        <div class="home-product__item--rate">
-                          <div class="home-product__item--heart">
-                            <i class="fa-regular fa-heart"></i>
-                          </div>
-                          <div class="home-product__item--rate-icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                          </div>
-                        </div>
-                        <div class="home-product__item--place-quantity">
-                          <h4 class="home-product__item--quantity-item">
-                            2k đã bán
-                          </h4>
-                          <h4 class="home-product__item--place-item">
-                            TP. Hồ Chí Minh
-                          </h4>
-                        </div>
-                      </a>
-                    </div>
-
-
-                    
-                  </div>
+                    </div>      -->
                 </div>
               </div>
             </div>
@@ -728,5 +316,12 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+
+  <script src="/script/product.js"></script>
+    <script src="/script/list_product.js"></script>
+  <script src="/script/main.js"></script>
+
+</body>
 </html>
